@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Registration page</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">
+        <i></i> <a href="mailto:contact@example.com">MediNursinghome@example.com</a>
+        <i></i> +61 9450 888888
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html">Medi Nursing Home</a></h1>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li>
+      <a href="#Login" class="Login"><span class="d-none d-md-inline">Log out</span></a></li>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>New Patient Registration Form</h2>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs Section -->
+
+    <section class="inner-page">
+      <div class="container">
+        <form id="register" >
+          <h4>Patient information</h4>
+          <table align="center" cellpadding = "10">
+ 
+            <!----- First Name ---------------------------------------------------------->
+            <tr>
+            <td>FIRST NAME</td>
+            <td><input type="text" id="First_Name" maxlength="30" placeholder="Enter First Name"/>
+            (max 30 characters a-z and A-Z)
+            </td>
+            </tr>
+            <!----- Last Name ---------------------------------------------------------->
+            <tr>
+            <td>LAST NAME</td>
+            <td><input type="text" id="Last_Name" maxlength="30" placeholder="Enter Last Name"/>
+            (max 30 characters a-z and A-Z)
+            </td>
+            </tr>
+            <!----- Date of Birth ---------------------------------------------------------->
+            <tr>
+            <td>DATE OF BIRTH</td>
+            <td><input type="text" id="DOB" maxlength="10" size="10" placeholder="MM/DD/YYYY"/>
+            </td>
+            </tr>
+
+            <!----- Medicare number ---------------------------------------------------------->
+            <tr>
+            <td>MEDICARE NUMBER </td>
+            <td><input type="text" id="medicareNumber" maxlength="30" placeholder="Enter medicare number" /></td>
+            </tr>
+            
+            <!----- Gender ---------------------------------------------------------->           
+            <tr><td>
+            <label>GENDER</label></td>
+            <td>
+            <select id="genders">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            </td></tr>
+
+            <!----- Adress ---------------------------------------------------------->
+            <tr>
+            <td>ADDRESS </td>
+            <td><input type="text" id="address" maxlength="30" placeholder="Enter adress"/>
+            CITY 
+            <input type="text" id="city" maxlength="15" placeholder="Enter city"/>
+            STATE
+            <input type="text" id="state" maxlength="3" placeholder="Enter state"/></td>
+
+            <tr>
+            <td>POSTCODE</td>
+            <td><input type="text" id="postcode" maxlength="10" placeholder="Enter postcode"/></td>
+            </tr>
+
+            <!----- Contact Number ---------------------------------------------------------->
+            <tr>
+            <td> CONTACT NUMBER </td>
+            <td><input type="text" id="contactNumber" maxlength="30" placeholder="Enter contact number"/></td>
+            </tr>
+
+            <!----- Contact Number ---------------------------------------------------------->
+            <tr>
+              <td> EMAIL </td>
+              <td><input type="text" id="email" maxlength="30" placeholder="Enter email"/></td>
+            </tr>
+
+            <!----- Medical History ---------------------------------------------------------->
+            <tr>
+            <td> Medical History</td>
+            <td><input type="text" id="medical" maxlength="30" placeholder="Enter medical history"/></td>
+            </tr>
+
+            <!----- Emergency Contact ---------------------------------------------------------->
+            <tr>
+            <td> EMERGENCY CONTACT: </td></tr>
+            <tr>
+            <td>Name </td>
+            <td><input type="text" id="namecontact" maxlength="30" placeholder="Enter name"/></td>
+            </tr>
+            <tr>
+            <td>Relationship </td>
+            <td><input type="text" id="relationship" maxlength="30"/></td></tr>
+            <tr>
+            <td>Contact number </td>
+            <td><input type="text" id="emerContactNumber" maxlength="30"placeholder="Enter phone number"/></td></tr>
+            </tr>
+
+            <td>Room number</td>
+            <td><input type="text" id="roomNumber" maxlength="30"placeholder="Enter room number"/></td></tr>
+            </tr>
+
+            <tr>
+              <td>Alcohol</td>
+              <td>
+                <input type="checkbox" id="alcohol">
+              </td>
+            </tr>
+
+            <tr>
+              <td>Smoker</td>
+              <td>
+                <input type="checkbox" id="smoker">
+              </td>
+            </tr>
+            
+            <tr><td>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <label for="image">Upload patient photo:</label>
+                <input type="file" id="image" name="image" accept="image/*">
+                <tr><td>
+            </form></td></tr>
+
+            <tr>
+            <td> OTHER COMMENT </td></tr>
+            <tr>
+            <tr><td><textarea id="othercomments" rows="4" cols="30"></textarea></td></tr>
+
+            <tr><td><button type="button" onclick="submitForm()">Register</button></td></tr>
+            <script src="js/registration.js"></script>
+        </table>
+      </form>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Medi Nursing Home</h3>
+            <p>
+              A108 Adam Street <br>
+              Sydney<br>
+              NSW <br><br>
+              <strong>Phone:</strong> +61 9450 888888<br>
+              <strong>Email:</strong> MediNursinghome@example.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>MediNursinghome</span></strong>. All Rights Reserved
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
